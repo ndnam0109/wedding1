@@ -280,7 +280,7 @@ export default {
             margin-bottom: 16px;
             height: 50px;
             min-height: 50px;
-            vertical-align: to-upper-case($string: "");
+
             resize: none;
           }
         }
@@ -296,8 +296,7 @@ export default {
       flex: 0 0 54px;
       cursor: default;
       width: 100%;
-      margin-bottom: constant(safe-area-inset-bottom);
-      margin-bottom: env(safe-area-inset-bottom);
+
       background-color: #eaeaea;
       color: #999999;
       &.active {

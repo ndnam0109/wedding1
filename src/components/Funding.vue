@@ -43,8 +43,8 @@ export default {
 .funding {
   padding-top: 48px;
   padding-bottom: 72px;
-  padding-left: $padding-vertical;
-  padding-right: $padding-vertical;
+  padding-left: 22px;
+  padding-right: 22px;
   text-align: center;
 
   .flower {

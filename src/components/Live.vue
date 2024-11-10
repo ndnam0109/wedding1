@@ -49,8 +49,8 @@ export default {
 .live {
   padding-top: 4px;
   padding-bottom: 68px;
-  padding-left: $padding-vertical;
-  padding-right: $padding-vertical;
+  padding-left: 22px;
+  padding-right: 22px;
   text-align: center;
   .hands {
     width: 75px;

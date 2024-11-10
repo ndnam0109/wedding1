@@ -73,8 +73,8 @@ export default {
 .credit {
   padding-top: 64px;
   padding-bottom: 80px;
-  padding-left: $padding-vertical;
-  padding-right: $padding-vertical;
+  padding-left: 22px;
+  padding-right: 22px;
   text-align: center;
   color: #202121;
   .h2 {

@@ -56,8 +56,8 @@ export default {
   .image {
     display: flex;
     flex: 1;
-    padding-left: $padding-vertical;
-    padding-right: $padding-vertical;
+    padding-left: 22px;
+    padding-right: 22px;
     justify-content: center;
     align-items: flex-end;
     img {

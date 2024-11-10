@@ -92,8 +92,8 @@ export default {
 .celebrate {
   padding-top: 32px;
   padding-bottom: 50px;
-  padding-left: $padding-vertical;
-  padding-right: $padding-vertical;
+  padding-left: 22px;
+  padding-right: 22px;
   text-align: center;
   color: #295138;
   cursor: pointer;
