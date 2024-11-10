@@ -1,9 +1,8 @@
 module.exports = {
-  publicPath: '/',
+  publicPath: '/wedding/dist/',
   css: {
     loaderOptions: {
       scss: {
-
       },
     },
   },
