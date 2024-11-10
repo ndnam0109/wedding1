@@ -36,7 +36,6 @@ import Celebrate from "./components/Celebrate.vue";
 import Map from "./components/Map.vue";
 import FlowerRain from "./components/FlowerRain.vue";
 import BottomSheet from "./components/BottomSheet.vue";
-import firebase from "firebase";
 
 export default {
   name: "App",
@@ -63,16 +62,7 @@ export default {
   },
   methods: {
     loadPresents() {
-      const presentsRef = firebase.database().ref("presents");
-      presentsRef.on("value", (snapshot) => {
-        const presents = snapshot.val();
-        this.presents = presents.map((present, index) => {
-          return {
-            ...present,
-            id: index,
-          };
-        });
-      });
+
     },
     handleClick(present) {
       this.isOpen = true;
