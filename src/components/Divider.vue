@@ -12,8 +12,8 @@ export default {
 
 <style lang="scss" scoped>
 .divider {
-  padding-left: $padding-vertical;
-  padding-right: $padding-vertical;
+  padding-left: 22px;
+  padding-right: 22px;
   img {
     width: 100%;
   }

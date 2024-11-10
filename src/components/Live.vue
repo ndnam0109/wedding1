@@ -6,7 +6,7 @@
     <img src="~@/assets/images/hands.png" class="hands" />
     <div>
       <p class = "header">
-        "우리 손 잡을까요?"<br />
+        "Chúng ta sẽ nắm tay nhau chứ?"<br />
       </p>
       <p>
         각자의 삶을 열심히 살아온 저희가,<br />
