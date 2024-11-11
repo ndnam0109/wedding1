@@ -10,7 +10,7 @@
     <Divider />
     <Celebrate @click="handleClick" :presents="presents" />
     <Divider />
-    <Map />
+<!--    <Map />-->
     <Divider />
     <Funding />
     <Divider />
