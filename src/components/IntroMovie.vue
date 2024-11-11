@@ -1,8 +1,8 @@
 <template>
   <div class="intro-movie">
-    <div class="image">
-      <img src="~@/assets/images/intro-image.png" />
-    </div>
+<!--    <div class="image">-->
+<!--      <img src="~@/assets/images/intro-image.png" />-->
+<!--    </div>png-->
     <div class="movie">
       <video
         poster="/img/video-thumbnail.jpg"
@@ -49,7 +49,7 @@ export default {
 .intro-movie {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  //height: 100vh;
   max-height: 780px;
   background-color: #ffffff;
   font-size: 0;

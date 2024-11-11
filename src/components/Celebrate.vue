@@ -1,7 +1,7 @@
 <template>
   <div class="celebrate">
-    <div class="description">how to celebrate</div>
-    <h2 class="h2">두 사람에게 축하의 마음 전하는 방법</h2>
+    <div class="description">Love Story</div>
+    <h2 class="h2">First Date</h2>
     <p>
       직접 만나지는 못해도<br />
       축하해주고 싶은 마음은 가득한 당신으로부터<br />
@@ -54,7 +54,7 @@
 
     <img src="~@/assets/images/cat.png" class="cat" />
     <p class="black">
-      위 리스트에 없는 선물이어도 좋습니다.<br />
+      How He Proposed<br />
       단, 티슈, 디퓨저 등은 이미 많아서<br />
       당근마켓에 팔아야 하나 고민인 수준이라 정중하게 사양할게요 :D<br />
       저희 부부를 생각하며 보내주시는 선물은<br />

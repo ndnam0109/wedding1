@@ -77,9 +77,8 @@ export default {
 
 <style>
 @font-face {
-  font-family: "Cafe24Oneprettynight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff")
-    format("woff");
+  font-family: "Meow Script", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
   font-weight: normal;
   font-style: normal;
 }
@@ -217,7 +216,7 @@ button {
   box-sizing: border-box;
 }
 #kyong {
-  font-family: "Cafe24Oneprettynight", sans-serif;
+  font-family: "Meow Script", cursive;
   max-width: 460px;
   margin: 0 auto;
   font-size: 15px;
