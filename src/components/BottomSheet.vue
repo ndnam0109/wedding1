@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import firebase from "firebase";
+
 
 export default {
   name: "BottomSheet",
@@ -107,44 +107,9 @@ export default {
         return;
       }
 
-      firebase
-        .database()
-        .ref("presents/" + this.present.id)
-        .set(
-          {
-            ...this.present,
-            isSoldout: true,
-            senderName: this.senderName,
-            message: this.message,
-          },
-          (error) => {
-            if (error) {
-              console.error(error.message);
-              return;
-            }
 
-            this.copyAddress();
-            window.open(this.present.link);
-            this.handleClose();
-            this.senderName = null;
-            this.message = null;
-          }
-        );
     },
-    copyAddress() {
-      const address = "서울시 강남구 역삼동 792-33 서담빌리지A동 205호";
-      this.$copyText(address).then(
-        function () {
-          alert("신혼집 주소가 복사되었어요. 구매링크로 이동합니다~!");
-        },
-        function () {
-          prompt(
-            "아래 신혼집 주소를 복사해주세요. 확인 눌러주시면 구매링크로 이동합니다~!",
-            address
-          );
-        }
-      );
-    },
+
   },
 };
 </script>

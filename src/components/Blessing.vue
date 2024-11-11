@@ -1,37 +1,60 @@
-<script setup>
+<script>
+import db from '@/firebase';  // Import Firebase Firestore
+import moment from 'moment';
+export default {
+  data() {
+    return {
+      messages: []  // Mảng để lưu các tin nhắn từ Firestore
+    };
+  },
+  created() {
+    this.getMessages();  // Gọi hàm để lấy dữ liệu khi component được tạo
+  },
+  methods: {
+    getMessages() {
+      db.collection("messages")
+          .orderBy("timestamp") // Sắp xếp theo ngày (nếu bạn có trường createdAt)
+          .onSnapshot(snapshot => {
+            const messages = snapshot.docs.map(doc => ({
+              id: doc.id,
+              ...doc.data(),  // Lấy dữ liệu của từng document
+            }));
+            this.messages = messages;  // Cập nhật dữ liệu vào state
+          }, error => {
+            console.error("Lỗi khi lắng nghe dữ liệu Firestore:", error);
+          });
+    },
+    formatTimestamp(timestamp) {
+      // Kiểm tra nếu timestamp là đối tượng Firestore Timestamp
 
+        timestamp = timestamp.toDate();
+
+
+      // Sử dụng Moment.js để định dạng timestamp
+      return moment(timestamp).format('DD/MM/YYYY HH:mm');
+    }
+  }
+};
 </script>
+
 
 <template>
 <div class="sketchy">
-  <main class="l-card">
+  <main v-for="message in messages" :key="message.timestamp" class="l-card">
     <section class="l-card__user">
       <div class="l-card__userInfo">
-        <span>Naruto </span>
-        <span>16:44 12/12/2024</span>
+        <span>{{ message.name }} </span>
+        <span>{{ formatTimestamp(message.timestamp) }} </span>
       </div>
     </section>
     <section class="l-card__text">
       <p>
-        This is a comment card appearing above a dotted background, and that's really cool!
+        {{ message.message }}
       </p>
     </section>
 
   </main>
-  <main class="l-card">
-    <section class="l-card__user">
-      <div class="l-card__userInfo">
-        <span>Songoku </span>
-        <span>16:44 12/12/2024</span>
-      </div>
-    </section>
-    <section class="l-card__text">
-      <p>
-        This is a comment card appearing above a dotted background, and that's really cool!
-      </p>
-    </section>
 
-  </main>
 </div>
 </template>
 
