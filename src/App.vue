@@ -47,7 +47,6 @@ export default {
     Celebrate,
     FlowerRain,
     BottomSheet,
-    Map,
   },
   data() {
     return {
