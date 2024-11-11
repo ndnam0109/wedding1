@@ -7,9 +7,41 @@ export default {
       messages: []  // Mảng để lưu các tin nhắn từ Firestore
     };
   },
+  computed: {
+    // Sắp xếp lại danh sách tin nhắn: namnd lên trên, sau đó là sắp xếp theo timestamp giảm dần
+    sortedMessages() {
+      const sortedMessages = [...this.messages];
+       sortedMessages.sort((a, b) => {
+
+
+        // 2. Sau khi đã đưa "namnd" lên trên, sắp xếp theo createdAt (timestamp) giảm dần (từ mới nhất đến cũ nhất)
+        if (a.timestamp && b.timestamp) {
+          return b.timestamp.toDate() - a.timestamp.toDate();  // Sắp xếp theo createdAt giảm dần (từ mới đến cũ)
+        }
+        return 0;  // Nếu không có createdAt, giữ nguyên thứ tự
+
+
+
+
+      });
+
+      // Di chuyển tin nhắn có name = "namnd" lên đầu mảng
+      const namndMessage = sortedMessages.find(msg => msg.name === 'Namnd');
+      const otherMessages = sortedMessages.filter(msg => msg.name !== 'Namnd');
+
+      // Nếu tìm thấy tin nhắn có name = "namnd", đưa nó lên đầu
+      if (namndMessage) {
+        return [namndMessage, ...otherMessages];
+      }
+
+      // Nếu không tìm thấy, trả về danh sách đã sắp xếp
+      return sortedMessages;
+    }
+  },
   created() {
     this.getMessages();  // Gọi hàm để lấy dữ liệu khi component được tạo
   },
+
   methods: {
     getMessages() {
       db.collection("messages")
@@ -40,7 +72,7 @@ export default {
 
 <template>
 <div class="sketchy">
-  <main v-for="message in messages" :key="message.timestamp" class="l-card">
+  <main v-for="message in sortedMessages" :key="message.timestamp" class="l-card">
     <section class="l-card__user">
       <div class="l-card__userInfo">
         <span>{{ message.name }} </span>
