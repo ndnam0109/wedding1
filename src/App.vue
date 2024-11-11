@@ -75,10 +75,10 @@ export default {
 
 <style>
 @font-face {
-  //font-family: "Meow Script", cursive;
-  //src: url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
-  font-weight: normal;
+  font-family: "Itim", cursive;
+  font-weight: 400;
   font-style: normal;
+
 }
 html,
 body,
@@ -214,7 +214,7 @@ button {
   box-sizing: border-box;
 }
 #kyong {
-  //font-family: "Meow Script", cursive;
+  font-family: "Itim", cursive;
   max-width: 460px;
   margin: 0 auto;
   font-size: 15px;

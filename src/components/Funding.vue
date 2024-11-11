@@ -6,23 +6,23 @@
     </h2>
     <p>
       Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng<br />
-      tốt đẹp nhất đến đám cưới của chúng tôi!
+      tốt đẹp nhất đến đám cưới của chúng mình!
+
+      <Blessing />
 
     </p>
-    <Button @click="funding">기부금 전달하기</Button>
+    <Button @click="funding">Gửi lời chúc</Button>
 
-    <a
-      href="https://www.kfhi.or.kr/apps/campaign/2020_stophunger_domestic_2.asp?id=540&mcode=658&utm_medium=display_ad&utm_source=youtube&utm_campaign=2020_stophunger_domestic_2&gclid=Cj0KCQiA5bz-BRD-ARIsABjT4nieWe1teUo7KT5HSTinY-IG9KFVj7BRfzI7I_YYAqapQ4jQFsqEqYIaAvqqEALw_wcB"
-      target="_blank"
-      class="link"
-      >기부처 확인하기</a
-    >
+
   </div>
 </template>
 
 <script>
+import Blessing from "@/components/Blessing.vue";
+
 export default {
   name: "Divider",
+  components: {Blessing},
   methods: {
     funding() {
       window.open("https://qr.kakaopay.com/281006011189386490008935");

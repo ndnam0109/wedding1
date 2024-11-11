@@ -43,7 +43,7 @@ onBeforeUnmount(() => {
     <div class="m-auto pb-3 aos-init aos-animate" data-aos="fade-up-right">
       <div class="mini_calendar">
         <table>
-          <caption class="calendar-month">Tháng 4 / 2024</caption>
+          <caption class="calendar-month">Tháng 12 / 2024</caption>
           <tbody>
           <tr>
             <th abbr="Monday">Thứ 2</th>
@@ -116,19 +116,19 @@ onBeforeUnmount(() => {
     </div>
     <div class="count" id="clock">
       <div class="box">
-        <div>{{ days }}</div>
+        <div class="time">{{ days }}</div>
         <span>Ngày</span>
       </div>
       <div class="box">
-        <div>{{ hours }}</div>
+        <div class="time">{{ hours }}</div>
         <span>Giờ</span>
       </div>
       <div class="box">
-        <div>{{ minutes }}</div>
+        <div class="time">{{ minutes }}</div>
         <span>Phút</span>
       </div>
       <div class="box">
-        <div>{{ seconds }}</div>
+        <div class="time">{{ seconds }}</div>
         <span>Giây</span>
       </div>
     </div>
@@ -163,6 +163,18 @@ onBeforeUnmount(() => {
   width: 30px;
   height: 30px;
   line-height: 28px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.time{
+  background-color: rgb(106 119 116);
+  color: #fff;
+  margin:  0 auto;
+  margin-bottom: 12px;
+  width: 45px;
+  height: 45px;
+  line-height: 32px;
   padding: 5px;
   border-radius: 50%;
 }

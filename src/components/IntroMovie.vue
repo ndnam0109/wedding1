@@ -1,8 +1,8 @@
 <template>
   <div class="intro-movie">
-<!--    <div class="image">-->
-<!--      <img src="~@/assets/images/intro-image.png" />-->
-<!--    </div>png-->
+    <div class="image">
+      <img src="~@/assets/images/intro-image.png" />
+    </div>png
     <div class="movie">
       <video
         poster="/img/video-thumbnail.jpg"
