@@ -1,7 +1,7 @@
 <template>
   <div class="live">
     <p class = "desc">
-      Hãy nhớ xem hoạt hình trên với âm thanh được bật!
+      Một chút đáng yêu cùng chúng tớ!
     </p>
     <img src="~@/assets/images/hands.png" class="hands" />
     <div>
@@ -9,10 +9,10 @@
         "Chúng ta sẽ nắm tay nhau chứ?"<br />
       </p>
       <p>
-        Chúng ta, những người đã sống cuộc đời mình một cách siêng năng,<br />
+        Chúng ta, những người đã sống cuộc đời mình một cách chăm chỉ và bình yên,<br />
         Bây giờ chúng ta sẽ nắm tay nhau và bước đi cạnh nhau..<br />
         Với một người xứng đáng với một lời ‘Anh yêu em’<br />
-        Anh sẽ cố gắng hết sức để được hạnh phúc lâu dài.<br />
+        Anh sẽ cố gắng hết sức để hạnh phúc chúng mình lâu dài.<br />
         Một đám cưới bình yên và hạnh phúc<br />
 
       </p>
@@ -20,6 +20,7 @@
         Ngày 22 tháng 12 năm 2024<br />
         16:30<br />
       </p>
+      <Calendar />
 <!--      <p>-->
 <!--        작은 가족식이기에 여러분의 얼굴을 보고 <br />-->
 <!--        직접 감사와 축하를 나누지는 못하지만,<br />-->
@@ -35,8 +36,11 @@
 </template>
 
 <script>
+import Calendar from "@/components/Calendar.vue";
+
 export default {
   name: "Divider",
+  components: {Calendar},
   methods: {
     attendance() {
       window.open("https://youtu.be/yU9UULnBt0w");

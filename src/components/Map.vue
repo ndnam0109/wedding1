@@ -1,42 +1,42 @@
 <template>
   <div class="map">
     <div></div>
-    <div class="map-container" ref="gal">
-      <vue-daum-map
-          :appKey="appKey"
-          :center.sync="center"
-          :level.sync="level"
-          :mapTypeId="mapTypeId"
-          :libraries="libraries"
-          @load="onLoad"
-          style="height:240px;"/>
-    </div>
-    <div class="cover">
-      <div class="navi-apps">
-        <a v-bind:href="tmapUrl">
-          <div class="ico_comm ico_tmap"><img src="~@/assets/images/icons/tmap.png"/></div>
-          <div class="link">T맵</div>
-        </a>
-      </div>
-      <div class="navi-apps">
-        <a v-bind:href="kakaoTaxiUrl">
-          <div class="ico_comm ico_taxi"><img src="~@/assets/images/icons/kakaot.png"/></div>
-          <div class="link">카카오택시</div>
-        </a>
-      </div>
-      <div class="navi-apps">
-        <a v-bind:href="navermapUrl">
-          <div class="ico_comm ico_navermap"><img src="~@/assets/images/icons/navermap.png"/></div>
-          <div class="link">네이버맵</div>
-        </a>
-      </div>
-      <div class="navi-apps">
-        <a v-bind:href="kakaomapUrl">
-          <div class="ico_comm ico_kakaomap"><img src="~@/assets/images/icons/kakaomap.png"/></div>
-          <div class="link">카카오맵</div>
-        </a>
-      </div>
-    </div>
+<!--    <div class="map-container" ref="gal">-->
+<!--      <vue-daum-map-->
+<!--          :appKey="appKey"-->
+<!--          :center.sync="center"-->
+<!--          :level.sync="level"-->
+<!--          :mapTypeId="mapTypeId"-->
+<!--          :libraries="libraries"-->
+<!--          @load="onLoad"-->
+<!--          style="height:240px;"/>-->
+<!--    </div>-->
+<!--    <div class="cover">-->
+<!--      <div class="navi-apps">-->
+<!--        <a v-bind:href="tmapUrl">-->
+<!--          <div class="ico_comm ico_tmap"><img src="~@/assets/images/icons/tmap.png"/></div>-->
+<!--          <div class="link">T맵</div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="navi-apps">-->
+<!--        <a v-bind:href="kakaoTaxiUrl">-->
+<!--          <div class="ico_comm ico_taxi"><img src="~@/assets/images/icons/kakaot.png"/></div>-->
+<!--          <div class="link">카카오택시</div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="navi-apps">-->
+<!--        <a v-bind:href="navermapUrl">-->
+<!--          <div class="ico_comm ico_navermap"><img src="~@/assets/images/icons/navermap.png"/></div>-->
+<!--          <div class="link">네이버맵</div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="navi-apps">-->
+<!--        <a v-bind:href="kakaomapUrl">-->
+<!--          <div class="ico_comm ico_kakaomap"><img src="~@/assets/images/icons/kakaomap.png"/></div>-->
+<!--          <div class="link">카카오맵</div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 
