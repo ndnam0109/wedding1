@@ -25,14 +25,7 @@ export default {
 
       });
 
-      // Di chuyển tin nhắn có name = "namnd" lên đầu mảng
-      const namndMessage = sortedMessages.find(msg => msg.name === 'Namnd');
-      const otherMessages = sortedMessages.filter(msg => msg.name !== 'Namnd');
 
-      // Nếu tìm thấy tin nhắn có name = "namnd", đưa nó lên đầu
-      if (namndMessage) {
-        return [namndMessage, ...otherMessages];
-      }
 
       // Nếu không tìm thấy, trả về danh sách đã sắp xếp
       return sortedMessages;
