@@ -11,7 +11,7 @@
     <Celebrate @click="handleClick" :presents="presents" />
     <Divider />
 <!--    <Map />-->
-    <Divider />
+
     <Funding />
     <Divider />
     <div style="display: none">

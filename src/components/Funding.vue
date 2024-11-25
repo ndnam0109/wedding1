@@ -84,7 +84,7 @@ export default {
         this.closeModal();
         this.form.name = '';
         this.form.message = '';
-        alert("Lời chúc đã được gửi thành công!");
+        alert("Cảm ơn bạn đã gửi chúc phúc cho chúng tớ !");
       } catch (error) {
         console.error("Có lỗi khi gửi lời chúc: ", error);
         alert("Có lỗi xảy ra. Vui lòng thử lại.");

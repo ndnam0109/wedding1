@@ -1,31 +1,23 @@
 <template>
   <div class="celebrate">
     <div class="description">Love Story</div>
+
     <h2 class="h2">First Date</h2>
     <p>
-      Lorem Ipsum is simply dummy text of the printing  industry.<br />
-      Lorem Ipsum is simply dummy text of the printing industry.<br />
-      Lorem Ipsum is simply dummy text of the printing industry.<br />
+      Lần đầu hẹn hò, anh hồi hộp đến mức kiểm tra giờ liên tục, sợ mình đến muộn.<br />  Anh chọn một quán cà phê nhỏ, ấm cúng, nơi ánh đèn vàng dịu nhẹ bao phủ mọi góc. Em bước vào với nụ cười rạng rỡ, làm tim anh loạn nhịp. <br /> Chúng mình trò chuyện, chia sẻ những câu chuyện nhỏ bé nhưng chân thành. Buổi tối thật tuyệt vời với một lời hẹn lần sau, đầy hy vọng..<br />
 
-    </p>
-    <img src="~@/assets/images/goose.png" class="goose" />
-    <h2 class="h2">Cute confession</h2>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing  industry.<br />
-      Lorem Ipsum is simply dummy text of the printing industry.<br />
-      Lorem Ipsum is simply dummy text of the printing industry.<br />
 
     </p>
 
     <div class="gift-list">
       <div
-        :class="['gift', { 'is-disable': present.isSoldout }]"
-        v-for="(present, index) in presents"
-        :key="present.name + index"
-        data-aos="fade-up"
-        data-aos-duration="800"
-        :data-aos-delay="index % 2 === 0 ? 0 : 200"
-        @click="handleSubmitClick(present)"
+          :class="['gift', { 'is-disable': present.isSoldout }]"
+          v-for="(present, index) in presents"
+          :key="present.name + index"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          :data-aos-delay="index % 2 === 0 ? 0 : 200"
+          @click="handleSubmitClick(present)"
       >
         <div :class="['overlay', { 'is-disable': present.isSoldout }]"></div>
         <div class="thumbnail">
@@ -35,30 +27,42 @@
           <div class="title">{{ present.title }}</div>
           <div class="action">
             <img
-              :src="
+                :src="
                 present.isSoldout
                   ? require('../assets/images/heart-black.svg')
                   : require('../assets/images/heart.svg')
               "
-              alt=""
-              srcset=""
+                alt=""
+                srcset=""
             />{{ present.isSoldout ? "선물완료" : "선물하기"}}
           </div>
         </div>
       </div>
     </div>
 
-    <img src="~@/assets/images/cat.png" class="cat" />
-    <p class="black">
-      How He Proposed<br />
-
-    </p>
+    <h2 class="h2">Cute confession</h2>
+    <div class="image">
+      <img src="~@/assets/images/story1.png" />
+    </div>
     <p>
-      Lorem Ipsum is simply dummy text of the printing  industry.<br />
-      Lorem Ipsum is simply dummy text of the printing industry.<br />
-      Lorem Ipsum is simply dummy text of the printing industry.<br />
+      Trong một buổi chiều hoàng hôn, khi ánh nắng cuối ngày nhuộm vàng cả bầu trời, anh dẫn em đến một cánh đồng hoa dại nở rộ.<br /> Gió nhẹ nhàng thổi qua, mang theo hương thơm dịu dàng của cỏ cây. Anh đứng trước cô, tay run nhẹ vì hồi hộp, nhưng ánh mắt anh đầy sự chân thành.<br /> Anh nói: "Em có biết không, mỗi ngày em làm tim anh rộn ràng như ánh mặt trời chiếu sáng cả thế giới. Hãy để anh được bên em, chăm sóc và yêu thương em mãi mãi."<br /> Em mỉm cười, và cái gật đầu dịu dàng của cô làm trái tim anh như ngừng đập.<br />
 
     </p>
+
+
+    <img src="~@/assets/images/cat.png" class="cat" />
+    <h2 class="h2">
+      The moment of proposal
+
+    </h2>
+    <p>
+      3 năm bên nhau không phải là quãng thời gian quá dài, nhưng đủ cho chúng ta nhận ra được rất nhiều điều.<br /> Yêu nhau, vun vén hạnh phúc và cùng nỗ lực vượt qua những khó khăn trong cuộc sống. Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau.<br /> Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới. Giây phút anh ngỏ lời “Làm vợ anh nhé!”, em đã nguyện ý đời này, đi đâu cũng được, miễn là cùng anh.<br />
+
+
+    </p>
+    <div class="image">
+      <img src="~@/assets/images/story2.gif" />
+    </div>
   </div>
 </template>
 
@@ -102,7 +106,7 @@ export default {
     margin-bottom: 30px;
   }
   .h2 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     margin-bottom: 24px;
   }
