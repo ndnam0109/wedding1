@@ -2,7 +2,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 // Set the target date for the countdown
-const countDownDate = new Date("Jan 5, 2025 15:37:25").getTime();
+const countDownDate = new Date("Dec 7, 2024 16:30:00").getTime();
 
 // Reactive variables to store countdown time
 const days = ref(0);
@@ -43,7 +43,6 @@ onBeforeUnmount(() => {
     <div class="m-auto pb-3 aos-init aos-animate" data-aos="fade-up-right">
       <div class="mini_calendar">
         <table>
-          <caption class="calendar-month">Tháng 12 / 2024</caption>
           <tbody>
           <tr>
             <th abbr="Monday">Thứ 2</th>
@@ -71,7 +70,7 @@ onBeforeUnmount(() => {
             <td>4</td>
             <td>5</td>
             <td>6</td>
-            <td>7</td>
+            <td class="today">7</td>
             <td>8</td>
           </tr>
           <tr>
@@ -79,7 +78,7 @@ onBeforeUnmount(() => {
 
             <td>10</td>
             <td>11</td>
-            <td class="today">12</td>
+            <td >12</td>
             <td >13</td>
             <td>14</td>
             <td>15</td>

@@ -1,23 +1,23 @@
 <template>
   <div class="live">
     <p class = "desc">
-      Một chút đáng yêu cùng chúng tớ!
+<!--      Một chút đáng yêu cùng chúng tớ!-->
     </p>
     <img src="~@/assets/images/hands.png" class="hands" />
     <div>
       <p class = "header">
-        "Chúng ta sẽ nắm tay nhau chứ?"<br />
+        "Chúng ta sẽ cùng nắm tay nhau ❤️"<br />
       </p>
       <p>
-        Chúng ta, những người đã sống cuộc đời mình một cách chăm chỉ và bình yên,<br />
-        Bây giờ chúng ta sẽ nắm tay nhau và bước đi cạnh nhau..<br />
-        Với một người xứng đáng với một lời ‘Anh yêu em’<br />
-        Anh sẽ cố gắng hết sức để hạnh phúc chúng mình lâu dài.<br />
+        Chúng ta, những người đã sống cuộc đời mình một cách chăm chỉ và bình yên,
+        Bây giờ chúng ta sẽ nắm tay và bước đi cạnh nhau..<br />
+
+        Và hôm nay là đám cưới của chúng ta  <br />
         Một đám cưới bình yên và hạnh phúc<br />
 
       </p>
       <p class = "header">
-        Ngày 22 tháng 12 năm 2024<br />
+        Ngày 07 tháng 12 năm 2024<br />
         16:30<br />
       </p>
       <Calendar />

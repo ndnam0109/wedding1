@@ -2,12 +2,12 @@
   <div class="gallery">
     <img src="~@/assets/images/bunny.png" class="bunny" />
     <div class="description">
-      photo gallery
+      Photo gallery
     </div>
     <div></div>
     <div class="gallery-container" ref="gal">
       <div class="gallery-inner">
-        <div class="gallery-item" v-for="n in 13" :key="n">
+        <div class="gallery-item" v-for="n in 9" :key="n">
           <div class="image">
             <img
               :src="`/gallery/${n - 1}.jpg`"
@@ -129,6 +129,7 @@ export default {
           overflow: hidden;
           img {
             transition: transform 100ms;
+            object-fit: cover;
             width: 296px;
             height: 360px;
           }
