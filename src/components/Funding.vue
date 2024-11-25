@@ -7,10 +7,10 @@
     <p>
       Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng<br />
       tốt đẹp nhất đến đám cưới của chúng mình!
-
+    </p>
       <Blessing />
 
-    </p>
+
     <Button @click="openModal">Gửi lời chúc</Button>
 
     <!-- Hiển thị modal khi isModalVisible là true -->
@@ -119,13 +119,13 @@ export default {
     margin-bottom: 26px;
   }
   .h2 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     margin-bottom: 24px;
     color: #295138;
   }
   p {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     line-height: 24px;
     color: #202121;
   }

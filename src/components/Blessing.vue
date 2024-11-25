@@ -102,8 +102,13 @@ export default {
   border-bottom: 1px solid;
 }
 
+.l-card:nth-child(even) {
+  background: #f0f5f1;
+}
+
+
 .l-card__text p {
-  font-size: 14px;
+  font-size: 15px;
   color: #3f3f55;
   text-align: left;
 }
@@ -131,7 +136,7 @@ export default {
 .l-card__userInfo span:nth-child(1) {
   font-weight: bold;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #3f3f55;
 }
 .l-card__userInfo span:nth-child(2) {
@@ -141,7 +146,7 @@ export default {
 }
 
 .sketchy {
-
+margin-bottom: 24px;
   display: inline-block;
   border: 2px solid #333333;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;

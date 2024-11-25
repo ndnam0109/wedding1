@@ -2,7 +2,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 // Set the target date for the countdown
-const countDownDate = new Date("Dec 7, 2024 16:30:00").getTime();
+const countDownDate = new Date("Dec 8, 2024 12:30:00").getTime();
 
 // Reactive variables to store countdown time
 const days = ref(0);
@@ -71,7 +71,9 @@ onBeforeUnmount(() => {
             <td>5</td>
             <td>6</td>
             <td class="today">7</td>
-            <td>8</td>
+            <td class="today2">
+              <div>8</div>
+            </td>
           </tr>
           <tr>
             <td>9</td>
@@ -165,6 +167,20 @@ onBeforeUnmount(() => {
   padding: 5px;
   border-radius: 50%;
 }
+.today2{
+  div{
+    background-color: rgb(106 119 116);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+
+    border-radius: 50%;
+  }
+
+}
 
 .time{
   background-color: rgb(106 119 116);
@@ -214,7 +230,7 @@ onBeforeUnmount(() => {
     td {
       font-size: 0.9em;
       text-align: center;
-      width: 40px;
+      width: 40px !important;
       height: 40px;
       vertical-align: middle;
     }

@@ -6,15 +6,7 @@
     <div class="image">
       <img src="~@/assets/images/header.png" />
     </div>
-<!--    <div class="movie">-->
-<!--      <video-->
-<!--        poster="/img/video-thumbnail.jpg"-->
-<!--        :autoplay="getOS() !== 'iOS'"-->
-<!--        controls-->
-<!--      >-->
-<!--        <source src="/intro.mp4" type="video/mp4" />-->
-<!--      </video>-->
-<!--    </div>-->
+
   </div>
 </template>
 

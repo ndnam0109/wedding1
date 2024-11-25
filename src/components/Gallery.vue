@@ -7,7 +7,7 @@
     <div></div>
     <div class="gallery-container" ref="gal">
       <div class="gallery-inner">
-        <div class="gallery-item" v-for="n in 9" :key="n">
+        <div class="gallery-item" v-for="n in 7" :key="n">
           <div class="image">
             <img
               :src="`/gallery/${n - 1}.jpg`"
@@ -79,7 +79,7 @@ export default {
     overflow-x: auto;
     .gallery-inner {
       display: flex;
-      width: 3370px;
+      width: 1600px;
       .gallery-item {
         flex: 0 0 240px;
         position: relative;
